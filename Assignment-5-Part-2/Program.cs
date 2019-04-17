@@ -10,7 +10,9 @@ namespace Assignment_5_Part_2
     {
         static void Main(string[] args)
         {
-
+            Program a = new Program();
+            Console.WriteLine("The Longest word is : ");
+            Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
         }
     }
 }

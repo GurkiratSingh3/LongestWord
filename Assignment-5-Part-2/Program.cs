@@ -21,9 +21,15 @@ namespace Assignment_5_Part_2
             int wordArrayLength = words.Length;
             int[] wordsLength = new int[wordArrayLength];
             int x = 0;
+            string n = " ";
             foreach (var word in words)
             {
-               
+                if (word.Length > x)
+                {
+                    input = word;
+                    n = input;
+                    x = word.Length;
+                }
             }
 
             string currentWord = words[0];
@@ -35,7 +41,7 @@ namespace Assignment_5_Part_2
                 currentWord = words[y];
                 nextWord = words[y + 1];
             }
-            return longestWord;
+            return n;
         }
     }
 }

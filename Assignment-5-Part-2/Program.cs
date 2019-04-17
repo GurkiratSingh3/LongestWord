@@ -11,7 +11,7 @@ namespace Assignment_5_Part_2
         static void Main(string[] args)
         {
             Program a = new Program();
-            Console.WriteLine("The Longest word is : ");
+            Console.Write("The Longest word is : ");
             Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
         }
 
@@ -23,19 +23,19 @@ namespace Assignment_5_Part_2
             int x = 0;
             foreach (var word in words)
             {
-
+               
             }
 
             string currentWord = words[0];
             string nextWord;
-            string longestWod = currentWord;
+            string longestWord = currentWord;
 
             for (int y = 0; y < words.Length - 1; y++)
             {
                 currentWord = words[y];
                 nextWord = words[y + 1];
             }
-            return bb;
+            return longestWord;
         }
     }
 }
